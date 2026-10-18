@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,  initial-scale=1.0" >
+  <meta name="description" content="AE Kuriirit Oy tarjoaa kuriiri- ja kuljetuspalveluja, pikakuljetuksia, muuttokuljetuksia ja muita kuljetuspalveluja.">
+  <meta name="keywords" content="AE Kuriirit Oy, kuriiri, kuriiripalvelut, kaatopaikkakuljetukset, kaatopaikka, muuttoapu, muuttokuljetukset, kuljetus, Kuopio, kuljetuspalvelut, pikakuljetukset, yrityskuljetukset, koko Suomi">
+  <title>AE Kuriirit Oy</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#f5f7fa;
+      color:#333;
+      line-height:1.6;
+    }
+
+    header{
+      background:#123B6D;
+      color:rgb(255, 255, 255);
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+
+    header h1{
+      font-size:32px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:20px;
+      font-weight:bold;
+    }
+
+    .hero{
+      background:linear-gradient(rgba(18,59,109,.85),rgba(18,59,109,.85)),
+      url("van.jpg");
+      background-size:cover;
+      background-position:center;
+      color:white;
+      text-align:center;
+      padding:90px 20px;
+    }
+
+    .hero h2{
+      font-size:48px;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:22px;
+      max-width:700px;
+      margin:auto;
+    }
+
+    .button{
+      display:inline-block;
+      margin-top:30px;
+      padding:14px 28px;
+      background:#F59E0B;
+      color:white;
+      text-decoration:none;
+      border-radius:8px;
+      font-weight:bold;
+    }
+
+    .container{
+      width:90%;
+      max-width:1100px;
+      margin:50px auto;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+      gap:20px;
+    }
+
+    .card{
+      background:white;
+      padding:25px;
+      border-radius:12px;
+      box-shadow:0 5px 15px rgba(0,0,0,.08);
+    }
+
+    .card h3{
+      color:#123B6D;
+      margin-bottom:10px;
+    }
+
+    .contact{
+      background:#123B6D;
+      color:white;
+      padding:35px;
+      border-radius:14px;
+    }
+
+    .contact p{
+      margin:12px 0;
+      font-size:18px;
+    }
+
+    footer{
+      background:#0E2443;
+      color:white;
+      text-align:center;
+      padding:20px;
+      margin-top:40px;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>AE Kuriirit Oy</h1>
+
+  <nav>
+    <a href="#palvelut">Palvelut</a>
+    <a href="hinnasto.html">Hinnasto</a>
+    <a href="#yhteys">Yhteystiedot</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h2>Nopea ja luotettava kuriiripalvelu</h2>
+
+  <p>
+    AE Kuriirit tarjoaa kuriiri- ja kuljetuspalvelut kaikkialle Suomeen  nopeasti, joustavasti ja luotettavasti.
+  </p>
+
+  <a href="#yhteys" class="button">Ota yhteyttä</a>
+</section>
+
+<div class="container" id="palvelut">
+
+  <h2 style="margin-bottom:25px;">Palvelumme</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Kotitaloudet</h3>
+      <p>Nopeat toimitukset kiireellisille lähetyksille.</p>
+    </div>
+
+    <div class="card">
+      <h3>Julkiset organisaatiot</h3>
+      <p>Palvelut kunnille, yhteisöille, seuroille ja kaikille julkisille toimijoille.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Pikakuljetukset</h3>
+      <p>Nopeat toimitukset kiireellisille lähetyksille.</p>
+    </div>
+
+    <div class="card">
+      <h3>Yrityskuljetukset</h3>
+      <p>Luotettavat kuljetukset yrityksille ja sopimusasiakkaille.</p>
+    </div>
+
+    <div class="card">
+      <h3>Koko Suomi</h3>
+      <p>Ajamme tarvittaessa kaikkialle Suomeen.</p>
+    </div>
+
+    <div class="card">
+      <h3>Palvelut</h3>
+      <p>Kuriiripalvelut, muuttokuljetukset, kaatopaikkakuljetukset, soita ja kysyy lisää palveluista.</p>
+    </div>
+
+
+  </div>
+</div>
+
+<div class="container">
+  <h2>Hinnasto</h2>
+
+  <p style="margin:15px 0;">
+    Hinnastosta löytyvät kuljetukset, palvelut ja niiden hinnat.
+    Jos hinnastosta ei löydy etsimääsi palvelua, ota yhteyttä ja kysy lisää.
+  </p>
+
+  <p><strong>Hinnat sisältävät arvonlisäveron.</strong></p>
+
+  <a href="hinnasto.html" class="button">Avaa hinnasto</a>
+</div>
+
+<div class="container" id="yhteys">
+  <div class="contact">
+
+    <h2>Yhteystiedot</h2>
+
+</p>
+    <p>📞 <strong>Puhelin:</strong> <span id="phone"></span></p>
+    <p>✉️ <strong>Sähköposti:</strong> <span id="email"></span></p>
+    <p>🔗 <strong>Y-tunnus:</strong> <span id="ytunnus"></span></p>
+    
+
+  </div>
+</div>
+
+<footer>
+  © 2026 AE Kuriirit Oy
+</footer>
+
+<script>
+/* Muokkaa vain nämä tiedot */
+
+const CONTACT = {
+  phone: "+358 45 174 6800",
+  email: "info@aekuriirit.fi",
+  ytunnus: "3583255-2",
+  //address: "Vaahteratie 20, 70420 Kuopio"
+};
+
+document.getElementById("phone").textContent = CONTACT.phone;
+document.getElementById("email").textContent = CONTACT.email;
+document.getElementById("ytunnus").textContent = CONTACT.ytunnus;
+</script>
+
+</body>
+</html>

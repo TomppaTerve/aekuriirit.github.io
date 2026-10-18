@@ -1,0 +1,368 @@
+
+
+
+
+/*background: linear-gradient(to bottom, blue, white);
+
+
+*/
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #4f5964;
+    --primary-dark: #343c45;
+    --accent: #7a858f;
+
+    --background: #dfe3e6;
+    --background-light: #d7dadd;
+    --surface: #ffffff;
+
+    --text: #2f3439;
+    --text-light: #222020;
+    --border: #f309099c;
+
+    --shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+    --radius: 10px;
+
+    --max-width: 1200px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--background);
+    color: var(--text);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    width: min(90%, var(--max-width));
+    margin: 0 auto;
+}
+
+
+/* ---------- OTSIKOT ---------- */
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--primary-dark);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+}
+
+h2 {
+    font-size: clamp(1.8rem, 4vw, 2.7rem);
+}
+
+h3 {
+    font-size: 1.35rem;
+}
+
+p {
+    color: var(--text-light);
+}
+
+
+/* ---------- HEADER ---------- */
+
+header {
+    background: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+}
+
+.logo span {
+    color: var(--accent);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: var(--text);
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+
+/* ---------- HERO ---------- */
+
+.hero {
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    background:
+        linear-gradient(
+            135deg,
+            #f7f8f9 0%,
+            #e9ebed 100%
+        );
+}
+
+.hero-content {
+    max-width: 750px;
+    padding: 80px 0;
+}
+
+.hero h1 {
+    margin-bottom: 25px;
+}
+
+.hero p {
+    max-width: 650px;
+    font-size: 1.15rem;
+    margin-bottom: 35px;
+}
+
+
+/* ---------- PAINIKKEET ---------- */
+
+.btn {
+    display: inline-block;
+    padding: 13px 26px;
+    border-radius: 7px;
+    border: 2px solid transparent;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+.btn-secondary {
+    background: transparent;
+    border-color: var(--primary);
+    color: var(--primary);
+    margin-left: 10px;
+}
+
+.btn-secondary:hover {
+    background: var(--primary);
+    color: #ffffff;
+}
+
+
+/* ---------- YLEISET OSIOT ---------- */
+
+section {
+    padding: 90px 0;
+}
+
+.section-header {
+    max-width: 700px;
+    margin: 0 auto 50px;
+    text-align: center;
+}
+
+.section-header h2 {
+    margin-bottom: 15px;
+}
+
+.section-header p {
+    font-size: 1.05rem;
+}
+
+
+/* ---------- PALVELUT ---------- */
+
+.services {
+    background: var(--background-light);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.service-card {
+    background: var(--surface);
+    padding: 35px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 35px rgba(0, 0, 0, 0.10);
+}
+
+.service-icon {
+    width: 55px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e6e8ea;
+    color: var(--primary-dark);
+    border-radius: 50%;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.service-card h3 {
+    margin-bottom: 12px;
+}
+
+
+/* ---------- YRITYKSESTÄ ---------- */
+
+.about {
+    background: #ffffff;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-content h2 {
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    margin-bottom: 18px;
+}
+
+.about-image {
+    background: #e4e6e8;
+    min-height: 350px;
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+
+/* ---------- TILASTOT ---------- */
+
+.stats {
+    background: var(--primary-dark);
+    color: #ffffff;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+
+.stat h3 {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+}
+
+.stat p {
+    color: #cdd1d5;
+}
+
+
+/* ---------- CTA ---------- */
+
+.cta {
+    background: #e4e6e8;
+    text-align: center;
+}
+
+.cta-content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.cta h2 {
+    margin-bottom: 15px;
+}
+
+.cta p {
+    margin-bottom: 30px;
+}
+
+
+/* ---------- YHTEYSTIEDOT ---------- */
+
+.contact {
+    background: var(--background-light);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+}
+
+.contact-item {
+    margin-bottom: 20px;
+}
+
+.contact-item strong {
+    display: block;
+    color: var(--primary-dark);
+    margin-bottom: 3px;
+}
+
